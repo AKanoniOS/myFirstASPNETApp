@@ -15,12 +15,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.myString = "This is my array of integers";
+        int[] myArray = { 1, 2, 3, 4, 5 };
+        ViewBag.myArray = myArray;
         return View();
     }
 
     public IActionResult Privacy()
     {
+        
         ViewBag.Message = "This is my ViewBag message string.";
+        
         return View();
     }
 
