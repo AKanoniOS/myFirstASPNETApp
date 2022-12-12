@@ -20,6 +20,7 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
+        ViewBag.Message = "This is my ViewBag message string.";
         return View();
     }
 
