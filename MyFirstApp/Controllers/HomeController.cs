@@ -18,6 +18,15 @@ public class HomeController : Controller
         ViewBag.myString = "This is the first index of my array of integers";
         int[] myArray = { 1, 2, 3, 4, 5 };
         ViewBag.myArray = myArray;
+        ViewBag.myBool = true;
+        ViewBag.myBoolString = "This is my bool ->";
+        string newString = "nothing here yet ";
+        for (int i = 0; i < 5; i++)
+        {
+            newString += $", round {i}";
+        }
+        ViewBag.newString = newString;
+        ViewBag.newStringIntro = "I used a for loop and string interpolation to create this string ->";
         return View();
     }
 
